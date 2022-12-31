@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #222;
+  background-image: url(images/backgrounsnake.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.main{
+  width: 80%;
+ 
+  
+  text-align: center;
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+canvas{
+  width: 45%;
+  box-shadow: rgb(40, 39, 39) 0 4px 12px;
+  border-radius: 5px;
+}
+
+header{
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  gap: 15%;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.score {
+
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+    font-weight: 600;
+  font-size: 120%;
+  color: black;
+
+  border-radius: 5px;
+}
+
+ .reset {
+
+ 
+ 
+  font-size: 120%;
+  background-color: #2596be;
+  border: 1px solid #333;
+  border-radius: 0.25rem;
+  box-shadow: rgb(40, 39, 39) 0 2px 4px;
+  
+  color: black;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: 2px;
+  text-decoration: none;
+  
+  padding: 1px;
+
+}
+.reset:hover {
+  background-color: #199ece;
+  border-color: rgb(84, 84, 84);
+  box-shadow: rgb(40, 39, 39) 0 1px 2px;
+  color: rgb(40, 39, 39);
+  
+}
+
+
+.btnLeft{
+  margin-right: 5%;
+}
+.btn{
+  display: none;
+}
+
+.logo{
+  position: absolute;
+  left: -7%;
+  top: 5%;
+  width: 40%;
+  height: 40%;
+  background-image: url(images/snakeLogo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.word{
+  position: absolute;
+  left: -6%;
+  top: 25%;
+  width: 40%;
+  height: 40%;
+  background-image: url(images/snakeWord.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.tree{
+  position: absolute;
+  left: 59%;
+  top: 50%;
+  width: 40%;
+  height: 40%;
+  background-image: url(images/appleTree.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+@media (max-width: 600px) {
+  /* estilos para pantallas de anchura máxima de 600px */
+  body{
+    height: 100vh;
+  }
+  .main{
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  canvas{
+    width: 100%;
+    margin-bottom: 7%;
+  }
+  .btn{
+    display: inline-block;
+    font-size: 250%;
+    background-color: transparent;
+    border: none;
+  }
+  .btn:active{
+    background-color: transparent;
+    border-color: #199ece;;
+    box-shadow: #199ece 0 4px 12px;
+    
+    
+  }
+  .btnLeft{
+    margin-right: 25%;
+  }
+  .midBtn{
+    margin-top: 2%;
+  margin-bottom:  2%;
+  }
+  .score{
+    font-size: 125%;
+  }
+  .reset{
+    font-size: 125%;
+  }
+  .logo{
+    position: absolute;
+    left: -10%;
+    top: -4.8%;
+    width: 40%;
+    height: 40%;
+    background-image: url(images/snakeLogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .word{
+    position: absolute;
+    left: 7.5%;
+    top: -4.5%;
+    width: 50%;
+    height: 40%;
+    background-image: url(images/snakeWord.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .tree{
+    position: absolute;
+    left: 62.5%;
+    top: 94%;
+    width: 30%;
+    height: 30%;
+    background-image: url(images/appleTree.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    scale: 1.5;
+  }
+  
+  
+}
+
+@media (min-width: 601px) and (max-width: 920px) {
+  .main{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  canvas{
+    width: 95%;
+    margin-bottom: 5%;
+  }
+  .btn{
+    display: inline-block;
+    font-size: 200%;
+    background-color: transparent;
+    border: none;
+  }
+  .btn:active{
+    background-color: transparent;
+    border-color: #199ece;;
+    box-shadow: #199ece 0 4px 12px;
+    
+    
+  }
+  .btnLeft{
+    margin-right: 15%;
+  }
+  .midBtn{
+    margin-top: 2%;
+  margin-bottom:  2%;
+  }
+  .score{
+    font-size: 150%;
+  }
+  .reset{
+    font-size: 150%;
+  }
+  .logo{
+    position: absolute;
+    left: -7%;
+    top: -10%;
+    width: 40%;
+    height: 40%;
+    background-image: url(images/snakeLogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .word{
+    position: absolute;
+    left: 10%;
+    top: -10%;
+    width: 50%;
+    height: 40%;
+    background-image: url(images/snakeWord.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .tree{
+    position: absolute;
+    left: 59%;
+    top: 75%;
+    width: 40%;
+    height: 40%;
+    background-image: url(images/appleTree.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  
+
+}
